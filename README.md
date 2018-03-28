@@ -42,3 +42,15 @@ storage engines
 If it is possible for you to funnel all user input through a single system that decides on an ordering
 for all writes, it becomes much easier to derive other representations of the data by processing the 
 writes in the same order
+
+
+### Polls
+What is the Poll Loop
+- Consumers can fetch messages from multiple sources
+- A poll is an event loop
+  - Partition assignment
+  - Message fetching
+  - Rebalancing
+  - Coordination
+
+- Note: each consumer should run in seperate thread
